@@ -1,5 +1,14 @@
     
 // Escribir una función flecha de JavaScript que reciba un argumento y retorne el tipo de dato.
 
-const retornarTipo = (argumento) => let p =argumento.value;
+function ejecutarFuncion() {
+
+    let argumento = 5;
+
+    averiguarDato(argumento);
+}
+
+let averiguarDato = (argumentoRecibido) => {
+    console.log(typeof argumentoRecibido);
+}
 

@@ -7,11 +7,11 @@ function resaltarTexto(parrafo) {
     //código HTML indicado y renderizando sus elementos 
     //ej permite >> `<u> palabra </u>`-> para usar más adelantes
 
-    let arr = parrafoHtml.split(""); //>> transformo el parrafo el array por " "
+    let arr = parrafoHtml.split(" "); //>> transformo el parrafo el array por " "
 
     arr.forEach(palabra => { //>> recorro un forEach palabra por palabra
         if (palabra.length > 8) {
-            parrafoHtml = parrafoHtml.split(palabra).join(`<mark>${palabra}</mark>`)
+            parrafoHtml = parrafoHtml.split(palabra).join(`<mark style="background: red">${palabra}</mark>`)
         }
     });
 
